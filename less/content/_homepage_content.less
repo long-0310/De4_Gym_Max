@@ -1,0 +1,198 @@
+.banner {
+  padding: 0 15px;
+  transform: translateY(-80px);
+  &-inner {
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.37);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.37);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.37);
+    top: -78px;
+    .banner-item {
+      width: 33.33333%;
+      box-sizing: border-box;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      background-color: white;
+
+      .banner-img {
+        object-fit: cover;
+      }
+      .banner-content {
+        text-align: center;
+        width: 290px;
+        h3 {
+          font-size: 18px;
+          font-weight: 600;
+          text-transform: uppercase;
+        }
+        p {
+          font-size: 14px;
+          color: @desc-color;
+        }
+      }
+    }
+  }
+}
+.banner-tablet {
+  display: none;
+}
+.tab-bar {
+  &-list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    border-bottom: 1px solid @border-color;
+    li {
+      p {
+        display: inline-block;
+        font-size: 18px;
+        font-weight: 600;
+        text-transform: uppercase;
+        padding: 20px 18px;
+        cursor: pointer;
+      }
+      p:hover {
+        color: @main-color;
+        border-bottom: 2px solid @main-color;
+      }
+
+      .active {
+        color: @main-color;
+        border-bottom: 2px solid @main-color;
+      }
+    }
+  }
+  .tab-wrap {
+    .top-seller-product {
+      display: none;
+    }
+    .featured-product {
+      display: none;
+    }
+    .most-reviews-product {
+      display: none;
+    }
+    .active {
+      display: block;
+    }
+    .product-list {
+      .product-item {
+        margin-top: 30px;
+        .cols(25%);
+        .product-inner {
+          padding: 20px;
+          position: relative;
+          .btn-icon {
+            display: none;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            z-index: 3;
+            i {
+              display: block;
+              color: @desc-color;
+              font-size: 16px;
+              padding: 10px;
+              border-radius: 5px 0px;
+              margin-bottom: 15px;
+              border: 1px solid @border-color;
+              transition: 0.3s;
+              cursor: pointer;
+              &:hover {
+                background: @main-color;
+                color: white;
+              }
+            }
+          }
+          .product-img {
+            text-align: center;
+            img {
+              width: 80%;
+              height: 220px;
+              object-fit: contain;
+              transition: 0.5s;
+            }
+          }
+          .product-content {
+            margin-top: 50px;
+            h4 {
+              font-size: 14px;
+              font-weight: 400;
+              margin-bottom: 8px;
+            }
+            p {
+              font-size: 14px;
+              font-weight: 600;
+            }
+          }
+          &:hover img {
+            transform: scale(1.1);
+          }
+          &:hover {
+            .btn-icon {
+              display: block;
+            }
+            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.37);
+          }
+        }
+      }
+    }
+  }
+}
+.customer {
+  margin: 92px 0;
+  text-align: center;
+  .customer-inner {
+    margin-top: 48px;
+    .customer-review {
+      text-align: center;
+      margin: 0 auto;
+
+      img {
+        margin: 0 auto;
+        object-fit: cover;
+        border-radius: 100%;
+      }
+      p {
+        display: inline-block;
+        margin: 0 auto;
+        width: 800px;
+        margin: 15px 0;
+        color: @desc-color;
+      }
+      h5 {
+        font-size: 18px;
+        font-weight: 600;
+      }
+      span {
+        color: @desc-color;
+      }
+    }
+  }
+}
+.line {
+  margin-top: 40px 0;
+  max-width: 1170px;
+  height: 1px;
+  background-color: @border-color;
+}
+.brand {
+  margin: 48px 0;
+
+  &-inner {
+    margin: 16px 0;
+    text-align: center;
+    .cols(16.66666667%);
+    .brand-content {
+      img {
+        transition: 0.3s;
+      }
+      &:hover {
+        img {
+          transform: scale(1.2);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,40 @@
+.slide {
+  background-image: url("../../img/468886-PFZ4PE-862.png");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  .slide-inner {
+    color: white;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40%;
+    .slide-title {
+      font-size: 60px;
+      font-weight: 600;
+    }
+    .slide-subtitle {
+      font-size: 40px;
+      font-weight: 600;
+      margin: 12px 0;
+    }
+    .slide-desc {
+      font-size: 16px;
+      font-weight: 400;
+      margin: 12px 0;
+    }
+    .btn-slide {
+      margin: 12px 0;
+      display: inline-block;
+
+      color: white;
+      font-size: 14px;
+      text-transform: uppercase;
+      padding: 18px 42px;
+      border: 1px solid white;
+      &:hover {
+        background-color: @main-color;
+      }
+    }
+  }
+}
